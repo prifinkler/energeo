@@ -1,0 +1,70 @@
+.cards-bg {
+  background: rgba(12, 38, 92, 0.5);
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.main-piechart {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.elemental-cards {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .main-piechart {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .elemental-cards {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .app-container .main-content {
+    padding: 30px;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .main-piechart {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .elemental-cards {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
