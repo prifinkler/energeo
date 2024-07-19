@@ -5,7 +5,6 @@ import './styles/App.css'
 import * as bootstrap from 'bootstrap'
 import NavBar from './components/NavBar'
 import CarbonIntensity from './pages/CarbonIntensity'
-import DataSources from './pages/DataSources'
 import Dashboard from './pages/Dashboard'
 import EnerGenius from './pages/EnerGenius'
 import { ThemeProvider } from '@mui/material/styles';
@@ -63,7 +62,6 @@ function App() {
               <Route path="/" element={<Dashboard data={data}/>} />
               <Route path="/carbonintensity" element={<CarbonIntensity />} />
               <Route path="/energenius" element={<EnerGenius />} />
-              <Route path="/datasources" element={<DataSources />} />
             </Routes>
           </main>
         </ThemeProvider>

@@ -1,12 +1,18 @@
-import { PieChart, pieArcLabelClasses } from '@mui/x-charts';
 import { useState } from 'react';
+import CustomPieChart from './ui/CustomPiechart';
+import InfoButton from './ui/InfoButton'
 
 export default function RegionDetails({ region }) {
-  const [highlightedItem, setHighLightedItem] = useState(null);
+  const [highlightedItem, setHighlightedItem] = useState(null);
 
   if (!region) {
     return <div className="d-flex flex-column justify-content-center align-items-center h-100">
-      <h3 className='mb-5 text-center'>Region Details</h3>
+      <h3 className='mb-5 text-center'>Region Details
+      <InfoButton
+        href="https://api.carbonintensity.org.uk/"
+        placement='bottom'
+      />
+      </h3>
       <p>Select a region on the map to see more details.</p>
     </div>;
   }
@@ -36,51 +42,27 @@ export default function RegionDetails({ region }) {
     { label: 'Wind', value: generation_wind_perc, color: '#90EE90' },
   ].filter(item => item.value > 0);
 
-  const pieChartProps = {
-    series: [
-      {
-        id: 'sync',
-        data: generationData,
-        highlightScope: { highlighted: 'item', faded: 'global' },
-        innerRadius: 80,
-        outerRadius: 140,
-        paddingAngle: 2,
-        cornerRadius: 2,
-        valueFormatter: (v) => `${v.value}%`,
-        arcLabel: (item) => `${item.value}%`,
-        arcLabelMinAngle: 15,
-      },
-    ],
-    height: 400,
-  };
 
   return (
     <div className="region-details">
-      <h3>Generation Mix for {Region}</h3>
+      <h3>Generation Mix for {Region}
+      <InfoButton
+          href="https://bmrs.elexon.co.uk/api-documentation/endpoint/generation/outturn/current"
+          placement='bottom'
+        />
+      </h3>
       <div className="chart-container">
-
-      <PieChart
-        {...pieChartProps}
-        highlightedItem={highlightedItem}
-        onHighlightChange={setHighLightedItem}
-        width={500}
+      <CustomPieChart
+        data={generationData}
         height={400}
-        slotProps={{
-          legend: {
-            direction: 'column',
-            // padding: -5,
-            labelStyle: {
-              fontSize: 14,
-            },
-          },
+        width={500}
+        highlightedItem={highlightedItem}
+        setHighlightedItem={setHighlightedItem}
+        arcLabel={(item) => `${item.value}%`}
+        legendProps={{
+          direction: 'column',
         }}
-        sx={{
-          [`& .${pieArcLabelClasses.root}`]: {
-            fontSize: 12,
-          },
-        }}
-      >
-      </PieChart>
+      />
       </div>
     </div>
   )

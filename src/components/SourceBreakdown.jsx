@@ -8,7 +8,8 @@ export default function SourceBreakdown({ sources, timePeriod, elementColor, ele
 
   }));
 
-  const valueFormatter = (value) => `${value} GW`;
+  const valueFormatter = (value) => `${(value / 1000).toFixed(2)} GW`;
+  // const valueFormatter = (value) => +(value / 1000).toFixed(2)
 
   return (
     <BarChart
