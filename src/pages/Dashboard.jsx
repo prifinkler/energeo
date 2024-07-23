@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import ElementalCard from "../components/ElementalCard";
-// import DateCard from "../components/DateCard";
 import DashboardPiechart from "../components/DashboardPiechart";
 import { ELEMENTS, COLOR_MAPPING } from '../utils/Constants'
 import ProgressCircle from '../components/ui/ProgressCircle';
-
 
 
 export default function Dashboard({ data }) {

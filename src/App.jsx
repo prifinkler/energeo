@@ -49,7 +49,7 @@ function App() {
   }, [])
 
   return (
-    <Router basename="/energeo">
+    <Router>
       <div className="app-container">
         <ThemeProvider theme={theme} >
           <NavBar />
