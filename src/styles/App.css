@@ -4,6 +4,7 @@
 
 @import './carbonintensity.css';
 @import './dashboard.css';
+@import './energenius.css';
 
 :root {
   --white: #eef5ef;

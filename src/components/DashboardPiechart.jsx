@@ -43,7 +43,7 @@ export default function DashboardPiechart({ data, timePeriod, setTimePeriod, col
     <Stack className="cards-bg h-100"
       direction='column'
       spacing={1}
-      sx={{ width: '100%', padding:'16px' }}
+      sx={{ width: '100%', height: '400', padding:'16px' }}
       justifyContent="center"
       alignItems="start"
     >
@@ -57,9 +57,8 @@ export default function DashboardPiechart({ data, timePeriod, setTimePeriod, col
       />
       <CustomPieChart
         data={chartData}
-        height={400}
-        innerRadius={100}
-        outerRadius={160}
+        innerRadius={'65%'}
+        outerRadius={'100%'}
         valueFormatter={(v) => `${v.value} GW`}
         highlightedItem={highlightedItem}
         setHighlightedItem={setHighlightedItem}

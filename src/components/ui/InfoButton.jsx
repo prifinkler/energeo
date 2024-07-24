@@ -8,6 +8,19 @@ export default function InfoButton({href, placement}) {
     <Tooltip
       arrow
       placement={placement}
+      enterTouchDelay={0}
+      slotProps={{
+        popper: {
+          modifiers: [
+            {
+              name: 'offset',
+              options: {
+                offset: [0, -14],
+              },
+            },
+          ],
+        },
+      }}
       title={
         <Link
           target="_blank"
