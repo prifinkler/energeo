@@ -8,6 +8,7 @@ EnerGeo is a React-based web application that visualises real-time energy sourci
 - [Key Features](#key-features)
 - [Tech Stack](#tech-stack)
 - [Libraries and APIs](#libraries-and-apis)
+- [EnerGeo Backend GitHub Repository](#backend-repo)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Key Components](#key-components)
@@ -47,6 +48,10 @@ EnerGeo is a React-based web application that visualises real-time energy sourci
 ![GeoJSON](https://img.shields.io/badge/GeoJSON-5A5A5A?style=for-the-badge&logo=geojson&logoColor=white)
 ![MapTiler](https://img.shields.io/badge/MapTiler-00AACC?style=for-the-badge&logo=maptiler&logoColor=white)
 ![React Google Autocomplete](https://img.shields.io/badge/React_Google_Autocomplete-4285F4?style=for-the-badge&logo=google&logoColor=white)
+
+## EnerGeo Backend GitHub Repository
+
+[EnerGeo Backend](https://github.com/JammyNinja/EnerGeo_API)
 
 ## Getting Started
 
