@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import CarbonIntensity from './pages/CarbonIntensity'
 import Dashboard from './pages/Dashboard'
 import EnerGenius from './pages/EnerGenius'
+import About from './pages/About'
 import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
 
@@ -62,6 +63,7 @@ function App() {
               <Route path="/" element={<Dashboard data={data}/>} />
               <Route path="/carbonintensity" element={<CarbonIntensity />} />
               <Route path="/energenius" element={<EnerGenius />} />
+              <Route path="/about" element={<About />} />
             </Routes>
           </main>
         </ThemeProvider>

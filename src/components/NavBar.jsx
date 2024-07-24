@@ -24,6 +24,7 @@ export default function NavBar() {
             <li className="nav-item"><Link to="/" className='nav-link'>Dashboard</Link></li>
             <li className="nav-item"><Link to="/carbonintensity" className='nav-link '>Carbon Intensity</Link></li>
             <li className="nav-item"><Link to="/energenius" className='nav-link '>EnerGenius</Link></li>
+            <li className="nav-item"><Link to="/about" className='nav-link '>About</Link></li>
           </ul>
         </div>
       </div>

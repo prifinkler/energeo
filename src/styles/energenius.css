@@ -1,3 +1,12 @@
 .css-ka7ti6-MuiAutocomplete-root {
   margin-bottom: 20px;
 }
+
+.css-tb612g-MuiTypography-root-MuiLink-root {
+  color: var(--white) !important;
+  text-decoration-color: var(--white) !important;
+}
+
+.css-1h40q88-MuiTooltip-tooltip, .css-kudwh-MuiTooltip-arrow::before {
+  background-color: #111111 !important;
+}
