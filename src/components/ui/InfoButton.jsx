@@ -7,21 +7,16 @@ import { useState } from 'react';
 export default function InfoButton({href, placement}) {
   const [open, setOpen] = useState(false);
 
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  const handleClick = () => {
+    setOpen(!open);
+  }
 
   return (
     <Tooltip
       arrow
       placement={placement}
       enterTouchDelay={0}
-      open={open} onClose={handleClose}
-      onOpen={handleOpen}
+      open={open}
       slotProps={{
         popper: {
           modifiers: [
@@ -46,6 +41,8 @@ export default function InfoButton({href, placement}) {
     <IconButton
       color="primary"
       aria-label="data source"
+      onClick={handleClick}
+
       // onClick={() => {
         // alert('clicked');
       // }}
