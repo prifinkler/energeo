@@ -44,25 +44,26 @@ export default function RegionDetails({ region }) {
 
 
   return (
-    <div className="region-details">
+    <div className="region-details" >
       <h3>Generation Mix for {Region}
       <InfoButton
           href="https://bmrs.elexon.co.uk/api-documentation/endpoint/generation/outturn/current"
           placement='bottom'
         />
       </h3>
-      <div className="chart-container">
-      <CustomPieChart
-        data={generationData}
-        height={400}
-        width={500}
-        highlightedItem={highlightedItem}
-        setHighlightedItem={setHighlightedItem}
-        arcLabel={(item) => `${item.value}%`}
-        legendProps={{
-          direction: 'column',
-        }}
-      />
+      <div className='region-piechart'>
+        <CustomPieChart
+          data={generationData}
+          innerRadius={'65%'}
+          outerRadius={'100%'}
+          highlightedItem={highlightedItem}
+          setHighlightedItem={setHighlightedItem}
+          arcLabel={(item) => `${item.value}%`}
+          legendProps={{
+            direction: 'column',
+            padding: -10,
+          }}
+        />
       </div>
     </div>
   )

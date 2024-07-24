@@ -43,7 +43,7 @@ export default function DashboardPiechart({ data, timePeriod, setTimePeriod, col
     <Stack className="cards-bg h-100"
       direction='column'
       spacing={1}
-      sx={{ width: '100%', height: '400', padding:'16px' }}
+      sx={{ width: '100%', padding:'16px' }}
       justifyContent="center"
       alignItems="start"
     >

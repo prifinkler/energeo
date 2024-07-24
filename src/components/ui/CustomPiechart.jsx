@@ -19,7 +19,7 @@ function PieCenterLabel({ children }) {
 
 export default function CustomPieChart({
   data,
-  height = 400,
+  height = 350,
   innerRadius = 80,
   outerRadius = 140,
   centerLabel,
