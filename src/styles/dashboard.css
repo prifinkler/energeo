@@ -48,10 +48,6 @@
 }
 
 @media (max-width: 767px) {
-  .app-container .main-content {
-    padding: 30px;
-  }
-
   .wrapper {
     grid-template-columns: 1fr;
   }

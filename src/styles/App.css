@@ -4,6 +4,7 @@
 
 @import './carbonintensity.css';
 @import './dashboard.css';
+@import './about.css';
 
 :root {
   --white: #eef5ef;
@@ -94,6 +95,8 @@ a:hover {
   height: 100%;
 }
 
-.team img {
-  width: 70%;
+@media (max-width: 767px) {
+  .main-content {
+    padding: 30px;
+  }
 }

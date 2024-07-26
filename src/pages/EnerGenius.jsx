@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import ProgressCircle from '../components/ui/ProgressCircle';
 import AutoComplete from '../components/ui/AutoComplete'
-import energenius from '../assets/energenius_2.jpeg'
+import energenius from '../assets/energenius_2.png'
 
 export default function EnerGenius() {
   const [location, setLocation] = useState('');

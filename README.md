@@ -12,8 +12,9 @@ Welcome to the frontend of [Energeo](https://energeo.dev/), a React-based web ap
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Key Components](#key-components)
-- [Contributing](#contributing)
+- [Data Sources](#data-sources)
 - [Acknowledgements](#acknowledgements)
+- [Contributing](#contributing)
 
 ## Project Team
 
@@ -135,7 +136,7 @@ We use solar energy generation forecast data provided by [University of Sheffiel
 ##### Weather Data
 We query a free [weather API](https://www.weatherapi.com/) for current weather data in a specified location.
 
-### Static data
+### Static Data
 
 ##### Historic energy generation data
 We downloaded a publicly available file from National Grid ESO's [data portal](https://www.nationalgrideso.com/data-portal). Contains data up to 17th July 2024. Find link to current document below.

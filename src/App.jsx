@@ -51,7 +51,6 @@ function App() {
 
   return (
     <Router>
-      <div className="app-container">
         <ThemeProvider theme={theme} >
           <NavBar />
           <main className="main-content">
@@ -67,7 +66,6 @@ function App() {
             </Routes>
           </main>
         </ThemeProvider>
-      </div>
     </Router>
   );
 }
