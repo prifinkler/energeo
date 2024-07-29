@@ -13,11 +13,11 @@ export default function Dashboard({ data }) {
   return (
     <>
       <div className='mb-5 text-center'>
-        <h1>Earth, Water, Air and Fire</h1>
+        <h1>Fire, Water, Earth, and Air</h1>
         <p>Where does our energy comes from?</p>
       </div>
       <p className='mb-5'>
-        Earth, air, fire, and water - the four elements that have shaped our world throughout human history. Today, these same forces are powering our future. This dashboard visualises how the UK harnesses these elemental energies, from the earth&apos;s resources and the wind&apos;s strength to the burning of fuels and water&apos;s flow, driving us towards a sustainable tomorrow.
+        Fire, water, earth and air - the four elements that have shaped our world throughout human history. Today, these same forces are powering our future. This dashboard visualises how the UK harnesses these elemental energies, from the earth&apos;s resources and the wind&apos;s strength to the burning of fuels and water&apos;s flow, driving us towards a sustainable tomorrow.
       </p>
         {isLoading ? (
           <div className='loading'><ProgressCircle /></div>
