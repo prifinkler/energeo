@@ -19,7 +19,7 @@ export default function About() {
       <h2 className="mb-4 text-center">About</h2>
       <div className="mb-4">
         <p>EnerGeo is a React-based web application designed to visualise real-time energy sourcing and environmental impact data. Our goal is to promote sustainable practices and raise awareness through interactive graphs and images. EnerGeo was developed during a hackathon themed <i>&quot;Earth, Fire, Air, Water - Where does our energy come from?&quot;</i>. By integrating MLOps, Cloud, and AI technologies, EnerGeo channels data from various APIs and leverages advanced LLM-based technologies.</p>
-        <p>We aspire to provide users with a comprehensive tool that facilitates a direct and easier understanding of the environmental impact of energy sources, and our unique take is classifying them into the four aforementioned elements. Currently EnerGeo offers visualizations of historical consumption levels in the UK (last 30 minutes and last 24 hours) and features an AI image generator that provides real-time visualizations of weather conditions in any location around the world.</p>
+        <p>We aspire to provide users with a comprehensive tool that facilitates a direct and easier understanding of the environmental impact of energy sources, and our unique take is classifying them into the four aforementioned elements. Currently EnerGeo offers visualisations of historical energy sourcing levels in the UK (last 30 minutes and last 24 hours) and features an AI image generator that provides real-time visualisations of weather conditions in any location around the world.</p>
       </div>
 
       <div className="row mb-4">
@@ -110,7 +110,7 @@ export default function About() {
             <h4 className="mb-3 text-center">Acknowledgements</h4>
             <p>Andrew Crossland, PhD inspired our project with his real-time web-based tool, mygridgb.co.uk, and offered us constant support and encouragement throughout the hackathon.</p>
             <br />
-            <p>Anna Putt for organizing the MentorMe initiative and its first hackathon, &apos;Earth, Fire, Air, Water - Where Does Our Energy Come From?&quot;, and Ben Fairbairn for coming up with the theme. We had the honour of winning the hackathon with this project!</p>
+            <p>Anna Putt for organising the MentorMe initiative and its first hackathon, &apos;Earth, Fire, Air, Water - Where Does Our Energy Come From?&quot;, and Ben Fairbairn for coming up with the theme. We had the honour of winning the hackathon with this project!</p>
             <br />
             <p>Le Wagon - London trained us and provided an excellent co-working space in the heart of London for the duration of the hackathon.</p>
           </div>
