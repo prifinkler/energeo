@@ -12,7 +12,7 @@ export default function CarbonIntensityMap() {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedRegion, setSelectedRegion] = useState(null);
 
-  const url = 'https://energeo-live-y2qdisfueq-ew.a.run.app/geo/regional/carbon_intensity'
+  const url = 'https://energeo-agent-y2qdisfueq-ew.a.run.app/geo/regional/carbon_intensity'
 
   useEffect(() => {
     axios.get(url).then(res => {

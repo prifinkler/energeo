@@ -27,7 +27,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const url = 'https://energeo-live-y2qdisfueq-ew.a.run.app/current'
+  const url = 'https://energeo-agent-y2qdisfueq-ew.a.run.app/current'
 
   const fetchData = async () => {
     setIsLoading(true);
